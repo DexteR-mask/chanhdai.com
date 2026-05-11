@@ -54,7 +54,7 @@ ${PROJECTS.map((item) => {
 }).join("\n\n")}
 `
 
-const awardsText = `## Awards
+const awardsText = `## Research & Projects
 
 ${AWARDS.map((item) => `### ${item.prize} | ${item.title}\n\n${item.description}`).join("\n\n")}
 `

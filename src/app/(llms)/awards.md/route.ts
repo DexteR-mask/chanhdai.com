@@ -1,6 +1,6 @@
 import { AWARDS } from "@/features/portfolio/data/awards"
 
-const content = `# Awards
+const content = `# Research & Projects
 
 ${AWARDS.map((item) => `## ${item.prize} | ${item.title}\n\n${item.description}`).join("\n\n")}
 `

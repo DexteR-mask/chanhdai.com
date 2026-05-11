@@ -16,18 +16,19 @@ export function fetchAndDecodeAudio(url: string): Promise<AudioBuffer> {
 
   const ctx = getAudioContext()
 
-  const promise = fetch(url)
-    .then((res) => {
-      if (!res.ok) throw new Error(`Failed to fetch audio: ${res.status}`)
-      return res.arrayBuffer()
-    })
-    .then((data) => ctx.decodeAudioData(data))
-    .catch((err) => {
-      // Remove failed entry so subsequent calls can retry.
-      bufferCache.delete(url)
-      throw err
-    })
+  // const promise = fetch(url)
+  //   .then((res) => {
+  //     if (!res.ok) throw new Error(`Failed to fetch audio: ${res.status}`)
+  //     return res.arrayBuffer()
+  //   })
+  //   .then((data) => ctx.decodeAudioData(data))
+  //   .catch((err) => {
+  //     // Remove failed entry so subsequent calls can retry.
+  //     bufferCache.delete(url)
+  //     throw err
+  //   })
 
-  bufferCache.set(url, promise)
-  return promise
+  // just return null
+  // bufferCache.set(url, promise)
+  return new Promise((resolve) => resolve(null as unknown as AudioBuffer))
 }

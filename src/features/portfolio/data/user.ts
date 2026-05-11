@@ -1,64 +1,76 @@
 import type { User } from "@/features/portfolio/types/user"
 
 export const USER: User = {
-  firstName: "Chánh Đại",
-  lastName: "Nguyễn",
-  displayName: "Chánh Đại",
-  username: "ncdai",
+  firstName: "Jaspreet",
+  lastName: "Singh",
+  displayName: "Jaspreet Singh",
+  username: "jaspreetsingh",
   gender: "male",
   pronouns: "he/him",
-  bio: "Creating with code. Small details matter.",
+  bio: "Backend/Platform Engineer specializing in payment integrations, developer tooling, and scalable systems.",
   flipSentences: [
-    "Creating with code. Small details matter.",
-    "Design Engineer",
-    "Open Source Contributor",
+    "Backend/Platform Engineer",
+    "$ npm run build && npm start",
+    "Building scalable systems & developer tools",
+    "$ docker-compose up -d --scale api=3",
+    "Crafting seamless payment experiences",
+    "$ kubectl apply -f deployment.yaml",
+    "Optimizing build pipelines & workflows",
+    "$ go run main.go --port=8080",
+    "Exploring edge computing & embedded systems",
+    "$ redis-cli FLUSHALL && npm run seed",
+    "Containerizing services for production",
+    "$ webpack --mode production --watch",
+    "Designing database-agnostic platforms",
+    "$ stripe listen --forward-to localhost:3000/webhooks",
+    "Accelerating developer productivity",
+    "$ git push origin main && vercel deploy",
+    "Automating IoT ecosystems",
+    "$ pm2 start ecosystem.config.js",
+    "Debugging complex distributed systems",
+    "$ curl -X POST https://api.stripe.com/v1/charges",
+    "Architecting cloud-native solutions",
   ],
-  address: "Ho Chi Minh City, Viet Nam",
-  phoneNumber: "Kzg0Nzc3ODg4MTQ4", // E.164 format, base64 encoded (https://t.io.vn/base64-string-converter)
-  email: "ZGFpQGNoYW5oZGFpLmNvbQ==", // base64 encoded
-  website: "https://chanhdai.com",
-  jobTitle: "Design Engineer",
+  address: "Rajpura, Punjab, India",
+  phoneNumber: "KzkxIDg4NDcwMjc5NjM=", // base64 encoded "+91 8847027963"
+  email: "amFzcHJlZXQuc2luZ2gudGVjaEBnbWFpbC5jb20=", // base64 encoded "jaspreet.singh.tech@gmail.com"
+  website: "https://jaspreetsingh.dev",
+  jobTitle: "Backend/Platform Engineer",
   jobs: [
     {
-      title: "Design Engineer",
-      company: "shadcncraft",
-      website: "https://shadcncraft.com?atp=ncdai",
-      experienceId: "shadcncraft",
-    },
-    {
-      title: "Founder",
-      company: "Quaric",
-      website: "https://quaric.com",
-      experienceId: "quaric",
+      title: "Backend/Full Stack Engineer",
+      company: "Protokol.io (Native Teams)",
+      website: "https://protokol.io",
+      experienceId: "protokol",
     },
   ],
   about: `
-- Design Engineer with 5+ years of experience, known for pixel-perfect execution and strong attention to small details.
-- Passionate about exploring new technologies and turning ideas into reality through polished, thoughtfully crafted personal projects.
-- Creator of [chanhdai.com](https://github.com/ncdai/chanhdai.com) (1.8k stars), [React Wheel Picker](https://react-wheel-picker.chanhdai.com) (16k+ weekly downloads, ▲Vercel OSS Program), and [ZaDark](https://zadark.com) (80k+ downloads, 30k+ users) — peak metrics.
+- Backend/Platform Engineer with expertise in payment gateway integrations (Stripe, Braintree), developer tooling, and scalable backend systems.
+- Passionate about platform engineering, embedded systems, and CI/CD automation.
+- Built self-hosted LLM inference server with GPU acceleration and developed full-stack applications with modern tech stacks.
 `,
-  avatar: "https://assets.chanhdai.com/images/chanhdai-avatar-ghibli.webp",
+  avatar: "/images/mypic.jpeg",
   avatarVariants: {
-    lightOff: "https://assets.chanhdai.com/images/avatar-light-off.webp",
-    lightOn: "https://assets.chanhdai.com/images/avatar-light-on.webp",
-    darkOff: "https://assets.chanhdai.com/images/avatar-dark-off.webp",
-    darkOn: "https://assets.chanhdai.com/images/avatar-dark-on.webp",
+    lightOff: "/images/mypic.jpeg",
+    lightOn: "/images/mypic.jpeg",
+    darkOff: "/images/mypic.jpeg",
+    darkOn: "/images/mypic.jpeg",
   },
-  ogImage:
-    "https://assets.chanhdai.com/images/screenshot-og-image-dark.png?t=1778130487",
-  namePronunciationUrl: "https://assets.chanhdai.com/audio/chanhdai.mp3",
-  timeZone: "Asia/Ho_Chi_Minh",
+  ogImage: "/images/og-image-placeholder.png",
+  namePronunciationUrl: "",
+  timeZone: "Asia/Kolkata",
   keywords: [
-    "ncdai",
-    "nguyenchanhdai",
-    "nguyen chanh dai",
-    "chanhdai",
-    "chanh dai",
-    "iamncdai",
-    "quaric",
-    "zadark",
-    "nguyễn chánh đại",
-    "chánh đại",
+    "Jaspreet Singh",
+    "Backend Engineer",
+    "Platform Engineer",
+    "Rajpura",
+    "Punjab",
+    "Stripe Integration",
+    "Braintree Integration",
+    "Node.js Developer",
+    "Go Developer",
+    "Docker",
+    "Webpack",
   ],
-  dateCreated: "2023-10-20", // YYYY-MM-DD
+  dateCreated: "2024-01-01", // YYYY-MM-DD
 }

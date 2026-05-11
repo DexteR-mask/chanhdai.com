@@ -41,9 +41,9 @@ import { useClickSound } from "@/hooks/soundcn/use-click-sound"
 import { trackEvent } from "@/lib/events"
 import { copyToClipboardWithEvent } from "@/utils/copy"
 
-import { ChanhDaiMark, getMarkSVG } from "./chanhdai-mark"
 import { getWordmarkSVG } from "./chanhdai-wordmark"
 import { ComponentIcon, Icons } from "./icons"
+import { getMarkSVG, JaspreetSinghMark } from "./jaspreet-singh-mark"
 import { Button } from "./ui/button"
 import { Kbd, KbdGroup } from "./ui/kbd"
 import { Separator } from "./ui/separator"
@@ -63,7 +63,7 @@ const MENU_LINKS: CommandLinkItem[] = [
   {
     title: "Home",
     href: "/",
-    icon: <ChanhDaiMark />,
+    icon: <JaspreetSinghMark />,
     shortcut: "GH",
   },
   {
@@ -120,7 +120,7 @@ const PORTFOLIO_LINKS: CommandLinkItem[] = [
     icon: <Box />,
   },
   {
-    title: "Awards",
+    title: "Research & Projects",
     href: "/#awards",
     icon: <Crown />,
   },
@@ -357,7 +357,7 @@ export function CommandMenu({
                 handleCopyText(getMarkSVG(), "Mark as SVG copied")
               }}
             >
-              <ChanhDaiMark />
+              <JaspreetSinghMark />
               Copy Mark as SVG
             </CommandItem>
 
@@ -577,7 +577,7 @@ function CommandMenuFooter() {
       <div className="flex h-10" />
 
       <div className="absolute inset-x-0 bottom-0 flex h-10 items-center justify-between gap-2 rounded-b-2xl border-t px-4 text-xs font-medium">
-        <ChanhDaiMark className="size-6 text-muted-foreground" />
+        <JaspreetSinghMark className="size-6 text-muted-foreground" />
 
         <div className="flex shrink-0 items-center gap-2 max-sm:hidden">
           <span>{ENTER_ACTION_LABELS[selectedCommandKind]}</span>

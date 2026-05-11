@@ -7,8 +7,8 @@ import { toast } from "sonner"
 
 import { copyText } from "@/utils/copy"
 
-import { ChanhDaiMark, getMarkSVG } from "./chanhdai-mark"
 import { getWordmarkSVG } from "./chanhdai-wordmark"
+import { getMarkSVG, JaspreetSinghMark } from "./jaspreet-singh-mark"
 import {
   ContextMenu,
   ContextMenuContent,
@@ -24,7 +24,7 @@ export function BrandContextMenu({ children }: { children: React.ReactNode }) {
     <ContextMenu>
       <ContextMenuTrigger asChild>{children}</ContextMenuTrigger>
 
-      <ContextMenuContent className="w-fit dark:liquid-glass-border dark:ring-0">
+      {/* <ContextMenuContent className="w-fit dark:liquid-glass-border dark:ring-0">
         <ContextMenuItem
           onClick={() => {
             copyText(getMarkSVG())
@@ -32,7 +32,7 @@ export function BrandContextMenu({ children }: { children: React.ReactNode }) {
             success()
           }}
         >
-          <ChanhDaiMark />
+          <JaspreetSinghMark />
           Copy Mark as SVG
         </ContextMenuItem>
 
@@ -62,7 +62,7 @@ export function BrandContextMenu({ children }: { children: React.ReactNode }) {
             Download Brand Assets
           </a>
         </ContextMenuItem>
-      </ContextMenuContent>
+      </ContextMenuContent> */}
     </ContextMenu>
   )
 }

@@ -15,18 +15,24 @@ export type FluidGradientTextProps = {
    * @default 300
    * */
   svgViewBoxHeight?: number
+  /**
+   * Unique ID for the gradient to avoid conflicts when multiple instances exist.
+   * @default "fluid_gradient_text_linear"
+   * */
+  gradientId?: string
 }
 
 export function FluidGradientText({
   text,
   svgViewBoxWidth = 1200,
   svgViewBoxHeight = 300,
+  gradientId = "fluid_gradient_text_linear",
 }: FluidGradientTextProps) {
   const gradientX1Raw = useMotionValue(svgViewBoxWidth / 2)
   const gradientX1 = useSpring(gradientX1Raw, {
-    stiffness: 200,
-    damping: 30,
-    mass: 0.5,
+    stiffness: 300,
+    damping: 60,
+    mass: 0.8,
   })
 
   const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
@@ -65,7 +71,7 @@ export function FluidGradientText({
           stroke="currentColor"
           strokeOpacity="0.1"
           strokeWidth="2"
-          fill="url(#fluid_gradient_text_linear)"
+          fill={`url(#${gradientId})`}
           style={{
             fontFamily: "Helvetica",
             fontSize: svgViewBoxHeight,
@@ -76,7 +82,7 @@ export function FluidGradientText({
         </text>
         <defs>
           <motion.linearGradient
-            id="fluid_gradient_text_linear"
+            id={gradientId}
             x1={gradientX1}
             y1="0"
             x2={svgViewBoxWidth / 2}

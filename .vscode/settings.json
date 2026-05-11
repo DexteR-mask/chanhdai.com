@@ -56,5 +56,6 @@
     "**/index.module.css": "${dirname(1)}/${dirname}",
     "**/index.ts": "${dirname(1)}/${dirname}",
     "**/index.tsx": "${dirname(1)}/${dirname}"
-  }
+  },
+  "markdown.validate.enabled": true
 }

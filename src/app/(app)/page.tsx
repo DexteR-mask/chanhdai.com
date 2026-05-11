@@ -1,5 +1,4 @@
 import type { Metadata } from "next"
-import dynamic from "next/dynamic"
 import type { ProfilePage as PageSchema, WithContext } from "schema-dts"
 
 import { About } from "@/features/portfolio/components/about"
@@ -14,17 +13,10 @@ import { ProfileCover } from "@/features/portfolio/components/profile-cover"
 import { ProfileHeader } from "@/features/portfolio/components/profile-header"
 import { Projects } from "@/features/portfolio/components/projects"
 import { SocialLinks } from "@/features/portfolio/components/social-links"
-import { Sponsors } from "@/features/portfolio/components/sponsors"
 import { TechStack } from "@/features/portfolio/components/tech-stack"
 import { Testimonials } from "@/features/portfolio/components/testimonials"
 import { USER } from "@/features/portfolio/data/user"
 import { cn } from "@/lib/utils"
-
-const ComponentsShowcase = dynamic(() =>
-  import("@/features/portfolio/components/components-showcase").then(
-    (mod) => mod.ComponentsShowcase
-  )
-)
 
 export const metadata: Metadata = {
   alternates: {
@@ -54,28 +46,17 @@ export default function Page() {
         <About />
         <div className="flex h-2 w-full border-x border-line" />
 
-        <Testimonials />
-        <div className="flex h-2 w-full border-x border-line" />
+        {/* <Testimonials />
+        <div className="flex h-2 w-full border-x border-line" /> */}
 
         <GitHubContributions />
         <Separator />
 
         <TechStack />
-      </div>
-
-      <div className="mx-auto xl:container">
-        <Separator />
-        <ComponentsShowcase />
-      </div>
-
-      <div className="mx-auto md:max-w-3xl *:[[id]]:scroll-mt-22">
         <Separator />
 
-        <Blog />
-        <Separator />
-
-        <Sponsors />
-        <Separator />
+        {/* <Blog /> */}
+        {/* <Separator /> */}
 
         <Experiences />
         <Separator />
@@ -86,8 +67,8 @@ export default function Page() {
         <Awards />
         <Separator />
 
-        <Certifications />
-        <Separator />
+        {/* <Certifications />
+        <Separator /> */}
 
         <Bookmarks />
         <Separator />

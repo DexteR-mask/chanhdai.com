@@ -9,11 +9,11 @@ type GitHubContributionsResponse = {
 
 export const getGitHubContributions = unstable_cache(
   async () => {
-    const res = await fetch(
-      `${process.env.GITHUB_CONTRIBUTIONS_API_URL}/v4/${GITHUB_USERNAME}?y=last`
-    )
-    const data = (await res.json()) as GitHubContributionsResponse
-    return data.contributions
+    // const res = await fetch(
+    //   `${process.env.GITHUB_CONTRIBUTIONS_API_URL}/v4/${GITHUB_USERNAME}?y=last`
+    // )
+    // const data = (await res.json()) as GitHubContributionsResponse
+    return []
   },
   ["github-contributions"],
   { revalidate: 86400 } // Cache for 1 day (86400 seconds)

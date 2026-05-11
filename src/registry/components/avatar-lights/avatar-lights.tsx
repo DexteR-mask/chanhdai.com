@@ -84,7 +84,7 @@ function AvatarImage({
   return (
     <img
       className={cn(
-        "size-full rounded-full object-cover select-none",
+        "size-full rounded-full object-cover object-top select-none",
         className
       )}
       src={src}

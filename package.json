@@ -1,24 +1,24 @@
 {
-  "name": "chanhdai.com",
+  "name": "jaspreetsingh-portfolio",
   "version": "0.1.0",
-  "description": "A pixel-perfect dev portfolio and shadcn registry.",
-  "homepage": "https://chanhdai.com",
+  "description": "Backend/Platform Engineer portfolio showcasing payment integrations, developer tooling, and scalable systems.",
+  "homepage": "https://jaspreetsingh.dev",
   "license": "MIT",
   "author": {
-    "name": "Nguyen Chanh Dai",
-    "email": "dai@chanhdai.com",
-    "url": "https://github.com/ncdai"
+    "name": "Jaspreet Singh",
+    "email": "jaspreet.singh.tech@gmail.com",
+    "url": "https://github.com/jaspreetsingh"
   },
   "contributors": [
     {
-      "name": "Nguyen Chanh Dai",
-      "email": "dai@chanhdai.com",
-      "url": "https://github.com/ncdai"
+      "name": "Jaspreet Singh",
+      "email": "jaspreet.singh.tech@gmail.com",
+      "url": "https://github.com/jaspreetsingh"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ncdai/chanhdai.com.git"
+    "url": "git+https://github.com/jaspreetsingh/portfolio.git"
   },
   "scripts": {
     "dev": "next dev",
@@ -34,6 +34,7 @@
     "capture": "bun run ./src/scripts/capture.mts",
     "icons:dev": "bun run ./src/scripts/build-icons.ts --watch",
     "icons:build": "bun run ./src/scripts/build-icons.ts",
+    "favicons:fetch": "bun run ./scripts/fetch-favicons.ts",
     "generate-libphonenumber-metadata": "libphonenumber-metadata-generator ./src/assets/libphonenumber.metadata.json --countries VN --extended",
     "upgrade:next": "npx @next/codemod@latest upgrade latest",
     "upgrade:tailwind": "npx @tailwindcss/upgrade@latest",
